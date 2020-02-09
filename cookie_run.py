@@ -52,6 +52,8 @@ cookies = [
     ["Cheesecake Cookie", 0.12],
 ]
 
+cookies = sorted(cookies, key=lambda x: x[1])
+
 for cookie, probability in cookies:
     print(f"{cookie}'s probability: {probability * 100}%.")
     print()
