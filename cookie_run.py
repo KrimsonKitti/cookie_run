@@ -1,4 +1,6 @@
 import random
+import argparse
+
 print("======================= Bonuses =======================")
 print()
 
@@ -19,6 +21,11 @@ print()
 
 print("======================= Cookie Run Collab =======================")
 print()
+
+# command line arguments
+parser = argparse.ArgumentParser(description='Cookie run collab')
+parser.add_argument('--multi', '-m', help='Roll multiple times', action='store_true')
+args = parser.parse_args()
 
 # input is (cookie_name, probability)
 cookies = [
@@ -41,8 +48,13 @@ cookie_probabilities = [cookie[1] for cookie in cookies]
 # print(cookie_names)
 # print(cookie_probabilities)
 
-rolls = int(input("Enter how many rolls: "))
-print(f"Rolling {rolls} times.")
+rolls = 1
+if args.multi:
+    rolls = int(input("Enter how many rolls: "))
+    print(f"Rolling {rolls} times.")
+else:
+    print("Rolling once.")
+
 received_cookies = random.choices(population=cookie_names, weights=cookie_probabilities, k=rolls)
 for roll in received_cookies:
     print(f"You have received {roll}.")
