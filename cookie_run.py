@@ -43,6 +43,6 @@ cookie_probabilities = [cookie[1] for cookie in cookies]
 
 rolls = int(input("Enter how many rolls: "))
 print(f"Rolling {rolls} times.")
-received_cookies = random.choices(population=cookie_names, weights=cookie_probabilities, k=10)
+received_cookies = random.choices(population=cookie_names, weights=cookie_probabilities, k=rolls)
 for roll in received_cookies:
     print(f"You have received {roll}.")
