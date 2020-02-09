@@ -30,6 +30,6 @@ cookies = [
 ]
 
 for cookie, probability in cookies:
-    print(f"This cookie is named {cookie}")
-    print(f"The probability of getting {cookie} is {probability}%")
+    print(f"This cookie is named {cookie}.")
+    print(f"The probability of getting {cookie} is {probability}%.")
     print()
