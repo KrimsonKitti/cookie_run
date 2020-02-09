@@ -22,13 +22,13 @@ print()
 
 # input is (cookie_name, probability)
 cookies = [
-    ["Moonlight Cookie", 0.1],
-    ["Pitaya Dragon Cookie", 0.1],
-    ["Wind Archer Cookie", 0.15],
-    ["Sea Fairy Cookie", 0.15],
-    ["Millenial Tree Cookie", 0.15],
-    ["Dark Enchantress Cookie", 0.2],
-    ["Fire Spirit Cookie", 0.15],
+    ["Moonlight Cookie", 0.05],
+    ["Pitaya Dragon Cookie", 0.08],
+    ["Wind Archer Cookie", 0.2],
+    ["Sea Fairy Cookie", 0.2],
+    ["Millenial Tree Cookie", 0.1],
+    ["Dark Enchantress Cookie", 0.3],
+    ["Fire Spirit Cookie", 0.08],
 ]
 
 for cookie, probability in cookies:
