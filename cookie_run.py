@@ -1,20 +1,23 @@
-print("======================= Poetrys =======================")
+print("======================= Bonuses =======================")
+print()
 
 lst = [
-    "goodbye, people",
-    "cruel people",
-    "hello goodbye",
-    "people hello",
-    "goodbye hello",
-    "people goodbye",
+    "Free Relay",
+    "Coins +50%",
+    "Unlimited Stamina",
+    "Free Relay",
+    "Free Rescues",
+    "Unlimited Stamina",
+    "20% More Trophies",
 ]
 
-for cool_num, something_else in enumerate(lst):
-    print(f"{cool_num} the saying of the day is \"{something_else}\"")
+for cool_num, something_else in enumerate(lst, start=1):
+    print(f"Day {cool_num} of the week has: {something_else}")
 
 print()
 
 print("======================= Cookie Run Collab =======================")
+print()
 
 cookies = [
     ["Moonlight Cookie", 1],
