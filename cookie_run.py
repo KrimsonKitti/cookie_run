@@ -1,5 +1,6 @@
 import random
 import argparse
+from collections import defaultdict
 
 print("======================= Bonuses =======================")
 print()
@@ -54,8 +55,17 @@ cookies = [
 
 cookies = sorted(cookies, key=lambda x: x[1])
 
+# dict from probability to list of cookies
+cookies_group = defaultdict(list)
+
 for cookie, probability in cookies:
-    print(f"{cookie}'s probability: {probability * 100}%.")
+    # Group the cookies by probability
+    cookies_group[probability].append(cookie)
+
+for cookie_probability, cookie_list in cookies_group.items():
+    print(f"Cookies with probability {cookie_probability * 100}%:")
+    for cookie in cookie_list:
+        print(cookie)
     print()
 
 cookie_names = [cookie[0] for cookie in cookies]
