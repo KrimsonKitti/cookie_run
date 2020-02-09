@@ -5,9 +5,8 @@ lst = [
     "cruel people",
     "hello goodbye",
     "people hello",
-    "hello goodbye",
+    "goodbye hello",
     "people goodbye",
-    "hello goodbye",
 ]
 
 for cool_num, something_else in enumerate(lst):
