@@ -1,3 +1,4 @@
+import random
 print("======================= Bonuses =======================")
 print()
 
@@ -19,17 +20,29 @@ print()
 print("======================= Cookie Run Collab =======================")
 print()
 
+# input is (cookie_name, probability)
 cookies = [
-    ["Moonlight Cookie", 1],
-    ["Pitaya Dragon Cookie", 1],
-    ["Wind Archer Cookie", 10],
-    ["Sea Fairy Cookie", 5],
-    ["Millenial Tree Cookie", 10],
-    ["Dark Enchantress Cookie", 70],
-    ["Fire Spirit Cookie", 3],
+    ["Moonlight Cookie", 0.01],
+    ["Pitaya Dragon Cookie", 0.01],
+    ["Wind Archer Cookie", 0.10],
+    ["Sea Fairy Cookie", 0.05],
+    ["Millenial Tree Cookie", 0.10],
+    ["Dark Enchantress Cookie", 0.70],
+    ["Fire Spirit Cookie", 0.03],
 ]
 
 for cookie, probability in cookies:
     print(f"This cookie is named {cookie}.")
-    print(f"The probability of getting {cookie} is {probability}%.")
+    print(f"The probability of getting {cookie} is {probability * 100}%.")
     print()
+
+cookie_names = [cookie[0] for cookie in cookies]
+cookie_probabilities = [cookie[1] for cookie in cookies]
+# print(cookie_names)
+# print(cookie_probabilities)
+
+rolls = int(input("Enter how many rolls: "))
+print(f"Rolling {rolls} times.")
+received_cookies = random.choices(population=cookie_names, weights=cookie_probabilities, k=10)
+for roll in received_cookies:
+    print(f"You have received {roll}.")
