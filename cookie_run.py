@@ -15,6 +15,8 @@ for cool_num, something_else in enumerate(lst):
 
 print()
 
+print("======================= Cookie Run Collab =======================")
+
 cookies = [
     ["Moonlight Cookie", 1],
     ["Pitaya Dragon Cookie", 1],
