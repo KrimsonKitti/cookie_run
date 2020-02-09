@@ -1,10 +1,15 @@
-print("goodbye, world")
-print("what a cruel world")
+print("goodbye, people")
+print("cruel people")
 
 lst = [
-    "world hi",
-    "world bye",
-    "hi bye"
+    "hello goodbye",
+    "hello goodbye",
+    "people hello",
+    "hello goodbye",
+    "hello goodbye",
+    "people goodbye",
+    "hello goodbye",
+    "hello goodbye",
 ]
 
 for thing in lst:
