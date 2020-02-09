@@ -29,18 +29,31 @@ args = parser.parse_args()
 
 # input is (cookie_name, probability)
 cookies = [
-    ["Moonlight Cookie", 0.05],
-    ["Pitaya Dragon Cookie", 0.08],
-    ["Wind Archer Cookie", 0.2],
-    ["Sea Fairy Cookie", 0.2],
-    ["Millenial Tree Cookie", 0.1],
-    ["Dark Enchantress Cookie", 0.3],
-    ["Fire Spirit Cookie", 0.08],
+    ["Moonlight Cookie", 0.013],
+    ["Pitaya Dragon Cookie", 0.013],
+    ["Wind Archer Cookie", 0.013],
+    ["Sea Fairy Cookie", 0.013],
+    ["Millenial Tree Cookie", 0.013],
+    ["Dark Enchantress Cookie", 0.013],
+    ["Fire Spirit Cookie", 0.013],
+    ["Birthday Cake Cookie", 0.03],
+    ["Cocoa Cookie", 0.03],
+    ["Prophet Cookie", 0.03],
+    ["Pirate Cookie", 0.03],
+    ["Roguefort Cookie", 0.03],
+    ["Dark Choco Cookie", 0.03],
+    ["Wizard Cookie", 0.03],
+    ["Ion Cookie", 0.03],
+    ["Angel Cookie", 0.12],
+    ["Alchemist Cookie", 0.12],
+    ["Rockstar Cookie", 0.12],
+    ["Knight Cookie", 0.12],
+    ["Ninja Cookie", 0.12],
+    ["Cheesecake Cookie", 0.12],
 ]
 
 for cookie, probability in cookies:
-    print(f"This cookie is named {cookie}.")
-    print(f"The probability of getting {cookie} is {probability * 100}%.")
+    print(f"{cookie}'s probability: {probability * 100}%.")
     print()
 
 cookie_names = [cookie[0] for cookie in cookies]
