@@ -10,6 +10,7 @@ lst = [
     "hello goodbye",
 ]
 
-for thing in lst:
-    print(thing)
+for cool_num, something_else in enumerate(lst):
+    print(f"{cool_num} the saying of the day is \"{something_else}\"")
+
 
