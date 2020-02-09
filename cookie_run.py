@@ -1,14 +1,12 @@
-print("goodbye, people")
-print("cruel people")
+
 
 lst = [
-    "hello goodbye",
+    "goodbye, people",
+    "cruel people",
     "hello goodbye",
     "people hello",
     "hello goodbye",
-    "hello goodbye",
     "people goodbye",
-    "hello goodbye",
     "hello goodbye",
 ]
 
